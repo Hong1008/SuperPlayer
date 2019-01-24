@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp">
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:singleLine="true"
+        android:layout_toRightOf="@+id/ing"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="5dp"
+        android:text="노래제목"
+        android:id="@+id/songtitle"/>
+    <ProgressBar
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_alignBottom="@+id/songtitle"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:visibility="invisible"
+        android:id="@+id/ing"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:layout_below="@+id/songtitle"
+        android:layout_alignLeft="@+id/songtitle"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="5dp"
+        android:text="가수명"
+        android:id="@+id/songartist"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="9sp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:text="00:00"
+        android:id="@+id/songduration"/>
+
+
+
+</RelativeLayout>
